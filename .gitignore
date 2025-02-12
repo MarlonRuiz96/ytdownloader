@@ -1,0 +1,9 @@
+# Ignorar entorno virtual
+env/
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.pyc
+
+# Ignorar descargas de videos
+downloads/
