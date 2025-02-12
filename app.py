@@ -5,7 +5,7 @@ import os
 import uuid
 
 app = Flask(__name__)
-app.secret_key = 'Presariocq56.@@'  # Cambia esto por una clave segura
+app.secret_key = os.getenv('SECRET_KEY', 'clave_por_defecto')
 
 # Carpeta para almacenar descargas temporales
 DOWNLOAD_FOLDER = os.path.join(os.getcwd(), 'downloads')
